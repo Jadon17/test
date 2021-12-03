@@ -51,8 +51,8 @@ function draw(){
 
     if(left_wrist_score > 0.2){
         circle(leftWristX,leftWristY,20);
-        left_wrist_score= Number(leftWristY);
-        remove_decimal = floor(left_wrist_score);
+        left_wrist= Number(leftWristY);
+        remove_decimal = floor(left_wrist);
         volume = remove_decimal/500;
         document.getElementById("volume").innerHTML = "Volume = "+ volume;
         song.setVolume(volume);
